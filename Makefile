@@ -4,7 +4,7 @@ all: $(OBJS)
 	$(CXX) atoi.o -o atoi $(CXXFLAGS)
 	$(CXX) from_chars.o -o from_chars $(CXXFLAGS)
 
-debug: CXXFLAGS += -g -sanatizer=address -DDEBUG
+debug: CXXFLAGS += -g -sanatizer=address -DDEBUG -Wall
 debug: all
 
 clean:
